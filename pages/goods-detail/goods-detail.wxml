@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view>
+  <view class='header-box'>
+  </view>
+  <view class='header-title'>商品详情</view>
+  <view class='container'>
+    <view class='container-img'>
+      <image class='img' src='../image/012.png'></image>
+    </view>
+    <view class='container-title'></view>
+    <view class='container-advertisement'></view>
+  </view>
+  <view class='footer'>
+    <span>价格：<span>￥<span class="total"></span></span></span>
+    <view>去结算</view>
+  </view>
+</view>

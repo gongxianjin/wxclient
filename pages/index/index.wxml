@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view>
+  <view class='header-box'>
+  </view>
+  <view class='header-title'>请选择购买的商品</view>
+  <view class="header">
+    <span class="header-left">柜子号：{{id}}</span>
+    <span class="header-right">地址：{{}}</span>
+  </view>
+  <view class='container'>
+    <view class="item" style="flex-direction:row;" wx:for="{{ras}}" wx:for-index="idx" wx:for-item="itemName">
+      <view>
+        <image class="item-img" src='http://120.77.245.43:8084{{itemName["idx"].goods_thumb}}'/>
+      </view>
+      <view class='item-name'>
+        {{itemName[idx].goods_name}}
+      </view>
+      <view class='item-price'>
+        {{itemName[idx].price['0'].price['2']}}元
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <button class='footer-btn' bindtap="goToTalkPage">立即加盟</button>
+  </view>
+</view>
